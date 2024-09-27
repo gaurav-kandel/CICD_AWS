@@ -33,6 +33,7 @@ def predict(X_new, model_filename='model.pkl'):
 if __name__ == "__main__":
     # Generate some example data
     # Independent variables (features)
+    
     print("Starting Model...")
     X = np.random.rand(100, 1)  # 100 samples, 1 feature (random data)
 
