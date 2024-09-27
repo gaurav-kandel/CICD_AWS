@@ -24,3 +24,18 @@ jobs:
         with:
           name: pickle file
           path: model.pkl
+      - name: See Files
+        run: |
+          ls
+      # - name: Deploy to AWS Lambda
+      #   uses: aws-actions/configure-aws-credentials@v1
+      #   with:
+      #     aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      #     aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      #     aws-region: us-east-1
+      # - name: Create Zip File
+      #   run: |
+      #     zip -r function.zip . -x "*.git*"
+      # - name: Deploy to AWS Lambda
+      #   run: |
+      #     aws lambda update-function-code --function-name FraudCheck --zip-file fileb://function.zip
